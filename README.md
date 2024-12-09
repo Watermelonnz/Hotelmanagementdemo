@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-# Mean Stack Booking App
+gohotel booking app testing
 
 ## Description
 
-The Mean Stack Booking App is a web application developed for booking hotel reservations. With this application, you can browse hotels and make reservations. The application is developed using the MEAN stack, which includes MongoDB, ExpressJS, AngularJS, and NodeJS.
+gohotel Booking App is a web application developed for booking hotel reservations. With this application, you can browse hotels and make reservations. The application is developed using the MEAN stack, which includes MongoDB, ExpressJS, AngularJS, and NodeJS.
 
 ## Installation
 
@@ -11,16 +10,12 @@ The Mean Stack Booking App is a web application developed for booking hotel rese
 
 To install the client-side of this application, follow the steps below:
 
-1. Clone the repository to your local machine using the following command:
-
-```bash
-git clone https://github.com/KaganCubukcu/Angular-booking.git
-```
+1. Download the repository to your local machine.
 
 2. Navigate to the client directory using the following command:
 
 ```bash
-cd angular-booking
+cd Angular-booking-main
 ```
 
 3. Install the required dependencies using the following command:
@@ -90,5 +85,3 @@ Connected to database
 - You can visit the hotel-specific pages to learn more about the hotel.
 - You can book a room and make a reservation, and pay with the Stripe payment method.
 =======
-# Hotelmanagementdemo
->>>>>>> 5f6c753e1f359ac0bbb0d90e94b813a2c31a47a0
