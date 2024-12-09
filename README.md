@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mean Stack Booking App
 
 ## Description
@@ -88,3 +89,6 @@ Connected to database
 - You can search for hotels using the search bar.
 - You can visit the hotel-specific pages to learn more about the hotel.
 - You can book a room and make a reservation, and pay with the Stripe payment method.
+=======
+# Hotelmanagementdemo
+>>>>>>> 5f6c753e1f359ac0bbb0d90e94b813a2c31a47a0
