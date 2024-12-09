@@ -1,0 +1,112 @@
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 4px;
+}
+.navbar-container ul {
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+  padding: 4px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  width: 25vw;
+}
+
+.changelog-button,
+.login-button,
+.sign-up-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.changelog-button {
+  background-color: transparent;
+  border: none;
+}
+
+.login-button {
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+.sign-up-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.login-button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: ease-in-out 0.5s;
+}
+
+.company-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  color: #000;
+  cursor: pointer;
+}
+
+.hotels-section {
+  width: 25vw;
+  display: flex;
+  align-items: center;
+}
+
+.find-hotels-button {
+  display: block;
+  gap: 5px;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hotels-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #000;
+}
+
+.user-name {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .navbar-container {
+    display: block;
+  }
+
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: none;
+  }
+  .navbar-item-container {
+    width: 100%;
+  }
+  .user-avatar,
+  .user-favourites,
+  .heart-img {
+    display: none;
+  }
+  .changelog-button {
+    display: none;
+  }
+}

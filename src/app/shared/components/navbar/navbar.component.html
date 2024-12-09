@@ -1,0 +1,40 @@
+<nav class="navbar-container">
+  <ul class="navbar-item-container">
+    <li class="hotels-section">
+      <button class="find-hotels-button" (click)="navigateToHotelListing()">
+        <i class="bi bi-building"></i>
+        Find Hotels
+      </button>
+    </li>
+    <li class="company-name">
+      <h3 routerLink="/">Bookify</h3>
+    </li>
+    <li class="button-section" *ngIf="!(loggedInUser$ | async); else loggedInTrue">
+      <button class="changelog-button" routerLink="/changelog">
+        <img src="assets/icons/changelog.svg" alt="changelog" class="changelog-icon" />
+        Changelog
+      </button>
+      <button class="login-button" routerLink="/login">Login</button>
+      <button class="sign-up-button" routerLink="/sign-up">Sign Up</button>
+    </li>
+
+    <!-- logged in -->
+
+    <ng-template #loggedInTrue>
+      <div class="logged-in-container">
+        <button class="changelog-button" routerLink="/changelog">
+          <img src="assets/icons/changelog.svg" alt="changelog" class="changelog-icon" />
+          Changelog
+        </button>
+        <i class="bi bi-heart"></i>
+        <span class="user-favourites">Favourites</span>
+        <span class="user-avatar" routerLink="/account">{{ firstName | logo }}</span>
+        <span class="user-name" routerLink="/account">
+          <ng-container *ngIf="menuActive; else showFirstName">Settings</ng-container>
+          <ng-template #showFirstName>{{ firstName }}</ng-template>
+        </span>
+        <button (click)="toggleMenu()" class="menu-toggle-button">Toggle Menu</button>
+      </div>
+    </ng-template>
+  </ul>
+</nav>

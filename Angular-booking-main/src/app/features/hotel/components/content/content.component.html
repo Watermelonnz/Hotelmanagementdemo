@@ -1,0 +1,16 @@
+<div class="content-container">
+  <h2 class="content-title">Choose your Hotel</h2>
+  <p class="content-description">
+  
+  </p>
+  <div class="content-card-container">
+    <ng-container *ngIf="hotels$ | async as hotels">
+      <ng-container *ngFor="let hotel of hotels">
+        <app-card
+          [hotel]="hotel"
+          (bookNowClick)="onHotelBookNowClick($event)"
+        ></app-card>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>
